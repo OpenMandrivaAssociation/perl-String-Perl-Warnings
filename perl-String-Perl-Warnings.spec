@@ -3,7 +3,7 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 3
 
 Summary:    Determine if a string looks like a perl warning
 License:    GPL+ or Artistic
@@ -14,6 +14,7 @@ Source0:    http://www.cpan.org/modules/by-module/String/%{upstream_name}-%{upst
 BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(Regexp::Assemble)
 BuildRequires: perl(Test::More)
+Requires: perl(Regexp::Assemble)
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
