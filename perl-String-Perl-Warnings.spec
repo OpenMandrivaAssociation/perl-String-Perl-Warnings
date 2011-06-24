@@ -1,9 +1,9 @@
 %define upstream_name    String-Perl-Warnings
-%define upstream_version 1.04
+%define upstream_version 1.06
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 4
+Release:    %mkrel 1
 
 Summary:    Determine if a string looks like a perl warning
 License:    GPL+ or Artistic
