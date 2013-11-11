@@ -1,15 +1,15 @@
 %define upstream_name    String-Perl-Warnings
-%define upstream_version 1.06
+%define upstream_version 1.12
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	2
+Release:	1
 
 Summary:	Determine if a string looks like a perl warning
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/String/%{upstream_name}-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/String/String-Perl-Warnings-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
 BuildRequires:	perl(ExtUtils::MakeMaker)
@@ -63,4 +63,5 @@ perl Makefile.PL INSTALLDIRS=vendor
 * Sat Dec 25 2010 Shlomi Fish <shlomif@mandriva.org> 1.40.0-1mdv2011.0
 + Revision: 624963
 - import perl-String-Perl-Warnings
+
 
